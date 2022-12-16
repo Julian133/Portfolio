@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 12px;
+}
+
+.fit {
+  width: 100%;
+  object-fit: contain;
+}
+
+.row {
+  margin: 0 -6px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 black;
+  padding: 26px;
+  text-align: center;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.title_card {
+  padding: 6px;
+}
+
+@media screen and (max-width: 630px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 19px;
+  }
+}
